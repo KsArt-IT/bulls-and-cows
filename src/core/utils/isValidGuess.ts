@@ -1,4 +1,8 @@
-import { SupportedBase } from '../types.js';
+import type { SupportedBase } from '../types.js';
+import { createDigitValidator } from './createDigitValidator.js';
 
-export const isValidGuess = (_guess: string, _length: number, _base: SupportedBase): boolean =>
-  false;
+export const isValidGuess = (guess: string, length: number, base: SupportedBase): boolean => {
+  const isDigit = createDigitValidator(base);
+  const chars = [...guess.toLowerCase()];
+  return chars.length === length && chars.every(isDigit) && new Set(chars).size === length;
+};
