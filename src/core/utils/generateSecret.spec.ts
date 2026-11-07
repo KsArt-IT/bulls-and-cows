@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { SUPPORTED_BASES } from '../types.js';
+import { SUPPORTED_BASES } from '../constants.js';
 import { countPossibleSecrets } from './countPossibleSecrets.js';
 import { generateSecret } from './generateSecret.js';
 import { isValidGuess } from './isValidGuess.js';

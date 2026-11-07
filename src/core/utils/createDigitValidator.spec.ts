@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { SUPPORTED_BASES, SupportedBase } from '../types.js';
+import { SUPPORTED_BASES } from '../constants.js';
+import type { SupportedBase } from '../types.js';
 import { createDigitValidator } from './createDigitValidator.js';
 
 const VALID: Record<SupportedBase, string[]> = {

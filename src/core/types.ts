@@ -1,4 +1,5 @@
-export const SUPPORTED_BASES = [2, 8, 10, 16] as const;
+import { SUPPORTED_BASES } from './constants.js';
+
 export type SupportedBase = (typeof SUPPORTED_BASES)[number];
 
 export type Secret = readonly string[];

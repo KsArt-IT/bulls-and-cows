@@ -1,6 +1,6 @@
+import { DIGITS } from '../constants.js';
 import type { Secret, SupportedBase } from '../types.js';
 
-const DIGITS = '0123456789abcdef';
 type State = { readonly pool: readonly string[]; readonly secret: readonly string[] };
 
 export const generateSecret = (length: number, base: SupportedBase, random = Math.random): Secret =>
