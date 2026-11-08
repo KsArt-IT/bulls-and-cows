@@ -67,3 +67,22 @@ header h1 {
 .start {
   padding: 5px 10px;
 }
+
+.guess__input {
+  border: 2px solid #555;
+  background: #17181c;
+  color: #fff;
+}
+
+.guess__input--invalid {
+  border-color: #e5484d;
+}
+
+.guess__input--valid {
+  border-color: #3dd68c;
+}
+
+.guess__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
