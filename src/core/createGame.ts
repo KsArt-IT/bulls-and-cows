@@ -1,10 +1,11 @@
 import type { GameState, Settings } from './types.js';
+import { generateSecret } from './utils/generateSecret.js';
 
-export const createGame = (settings: Settings, now: number, _random = Math.random): GameState => ({
+export const createGame = (settings: Settings, now: number, random = Math.random): GameState => ({
   settings,
-  secret: [],
+  secret: generateSecret(settings.length, settings.base, random),
   history: [],
   status: 'playing',
-  startedAt: 0,
+  startedAt: now,
   finishedAt: null,
 });
