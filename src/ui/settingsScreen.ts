@@ -2,9 +2,8 @@ import { SUPPORTED_BASES, SUPPORTED_LENGTHS } from '../core/constants.js';
 import type { Settings, SupportedBase, SupportedLength } from '../core/types.js';
 import { availableLengths } from '../core/utils/availableLengths.js';
 import { countPossibleSecrets } from '../core/utils/countPossibleSecrets.js';
+import { BASE_NAMES } from './baseNames.js';
 import { element, optionButton } from './dom.js';
-
-const BASE_NAMES: Record<SupportedBase, string> = { 2: 'bin', 8: 'oct', 10: 'dec', 16: 'hex' };
 
 export type SettingsHandlers = {
   readonly onLength: (length: SupportedLength) => void;
