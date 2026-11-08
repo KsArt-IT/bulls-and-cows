@@ -86,3 +86,15 @@ header h1 {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.records {
+  margin-top: 20px;
+}
+
+.records__title {
+  margin: 10px 0 5px;
+}
+
+.records__list {
+  padding-left: 20px;
+}
