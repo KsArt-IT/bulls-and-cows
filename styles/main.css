@@ -217,7 +217,6 @@ button:disabled {
   font: inherit;
   font-size: 24px;
   letter-spacing: 6px;
-  text-transform: uppercase;
   color: var(--text);
   background: var(--field-bg);
   border: 2px solid var(--border);

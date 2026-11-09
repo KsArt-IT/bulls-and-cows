@@ -27,7 +27,7 @@ const renderSettings = (settings: Settings): HTMLElement =>
 const renderGame = (game: GameState): HTMLElement =>
   gameScreen(game, {
     onGuess: (guess) => {
-      const next = makeGuess(game, [...guess.toLowerCase()], Date.now());
+      const next = makeGuess(game, [...guess], Date.now());
       if (next === game) return;
       const record = toRecord(next);
       if (record) {
