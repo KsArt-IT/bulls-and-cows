@@ -2,6 +2,7 @@ import { createDigitValidator } from '../core/utils/createDigitValidator.js';
 import { hasDuplicateDigits } from '../core/utils/hasDuplicateDigits.js';
 import { isValidGuess } from '../core/utils/isValidGuess.js';
 import { element } from './dom.js';
+import { plural } from './plural.js';
 const guessForm = (state, onGuess) => {
     const { length, base } = state.settings;
     const isDigit = createDigitValidator(base);
@@ -46,7 +47,7 @@ const winBlock = (state, onNewGame) => {
     return element('section', { className: 'win' }, [
         element('p', {
             className: 'win__message',
-            text: `You won in ${state.history.length} attempts, ${seconds} s`,
+            text: `You won in ${plural(state.history.length, 'attempt')}, ${seconds} s`,
         }),
         newGameButton(onNewGame),
     ]);
