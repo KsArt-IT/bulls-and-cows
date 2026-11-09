@@ -13,7 +13,9 @@
     "format:check": "prettier . --check",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "predeploy": "rm -rf dist site && npm run build && mkdir site && cp -r index.html site.webmanifest styles assets dist site/ && touch site/.gitignore",
+    "deploy": "gh-pages -d site -t"
   },
   "lint-staged": {
     "*.{ts,js}": [
@@ -39,6 +41,7 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.8",
+    "gh-pages": "^6.3.0",
     "globals": "^17.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",

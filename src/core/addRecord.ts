@@ -2,7 +2,7 @@ import type { GameRecord } from './types.js';
 
 const TOP_PER_GROUP = 3;
 
-const toKey = ({ base, length }: GameRecord): string => `${base}:${length}`;
+const groupKey = ({ base, length }: GameRecord): string => `${base}:${length}`;
 
 const compare = (a: GameRecord, b: GameRecord): number =>
   a.attempts - b.attempts || a.timeMs - b.timeMs;
@@ -15,7 +15,7 @@ export const addRecord = (
 
   return sorted.filter(
     (current, index) =>
-      sorted.slice(0, index).filter((better) => toKey(better) === toKey(current)).length <
+      sorted.slice(0, index).filter((better) => groupKey(better) === groupKey(current)).length <
       TOP_PER_GROUP,
   );
 };
