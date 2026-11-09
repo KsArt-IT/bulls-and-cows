@@ -2,6 +2,7 @@ import { SUPPORTED_BASES, SUPPORTED_LENGTHS } from '../core/constants.js';
 import type { GameRecord } from '../core/types.js';
 import { BASE_NAMES } from './baseNames.js';
 import { element } from './dom.js';
+import { plural } from './plural.js';
 
 const recordsGroup = (
   base: GameRecord['base'],
@@ -16,7 +17,7 @@ const recordsGroup = (
       records.map(({ attempts, timeMs }) =>
         element('li', {
           className: 'records__item',
-          text: `${attempts} attempts · ${Math.round(timeMs / 1000)} s`,
+          text: `${plural(attempts, 'attempt')} · ${Math.round(timeMs / 1000)} s`,
         }),
       ),
     ),
