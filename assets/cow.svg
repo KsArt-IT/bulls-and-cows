@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Cow">
+  <!-- small horns -->
+  <path d="M70 60 C64 46 66 36 72 30 C76 40 80 48 82 56 Z" fill="#efe4c8" stroke="#8a7a5a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M130 60 C136 46 134 36 128 30 C124 40 120 48 118 56 Z" fill="#efe4c8" stroke="#8a7a5a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- ears -->
+  <ellipse cx="42" cy="82" rx="24" ry="12" transform="rotate(-15 42 82)" fill="#fafafa" stroke="#2b2b2b" stroke-width="3"/>
+  <ellipse cx="158" cy="82" rx="24" ry="12" transform="rotate(15 158 82)" fill="#fafafa" stroke="#2b2b2b" stroke-width="3"/>
+  <ellipse cx="44" cy="82" rx="14" ry="6" transform="rotate(-15 44 82)" fill="#f4b6c2"/>
+  <ellipse cx="156" cy="82" rx="14" ry="6" transform="rotate(15 156 82)" fill="#f4b6c2"/>
+  <!-- head -->
+  <path d="M62 56 C74 44 126 44 138 56 C150 70 148 108 140 130 C134 146 66 146 60 130 C52 108 50 70 62 56 Z" fill="#fafafa" stroke="#2b2b2b" stroke-width="3" stroke-linejoin="round"/>
+  <!-- spots -->
+  <path d="M64 66 C72 58 88 60 90 72 C92 84 80 90 70 86 C62 82 58 74 64 66 Z" fill="#2b2b2b"/>
+  <path d="M120 54 C130 52 140 60 138 70 C134 78 124 76 120 70 C116 64 114 56 120 54 Z" fill="#2b2b2b"/>
+  <!-- eyes -->
+  <circle cx="82" cy="98" r="8" fill="#fff" stroke="#2b2b2b" stroke-width="2"/>
+  <circle cx="118" cy="98" r="8" fill="#fff" stroke="#2b2b2b" stroke-width="2"/>
+  <circle cx="83" cy="99" r="4" fill="#1a1a1a"/>
+  <circle cx="117" cy="99" r="4" fill="#1a1a1a"/>
+  <!-- lashes -->
+  <path d="M74 90 L70 86 M80 88 L79 83 M86 89 L88 84" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M126 90 L130 86 M120 88 L121 83 M114 89 L112 84" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round"/>
+  <!-- muzzle -->
+  <ellipse cx="100" cy="134" rx="38" ry="24" fill="#f4b6c2" stroke="#2b2b2b" stroke-width="3"/>
+  <ellipse cx="87" cy="132" rx="5" ry="8" fill="#c0607a"/>
+  <ellipse cx="113" cy="132" rx="5" ry="8" fill="#c0607a"/>
+  <!-- smile -->
+  <path d="M88 146 C94 152 106 152 112 146" fill="none" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

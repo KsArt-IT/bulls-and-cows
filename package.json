@@ -1,0 +1,53 @@
+{
+  "name": "bulls-and-cows",
+  "version": "1.0.0",
+  "description": "A number-guessing game in a functional style, built with TDD. Task for RS School, course JS/Fullstack 2026 Q3.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests --dir src",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "predeploy": "rm -rf dist site && npm run build && mkdir site && cp -r index.html site.webmanifest styles assets dist site/ && touch site/.gitignore",
+    "deploy": "gh-pages -d site -t"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint",
+      "prettier --write"
+    ],
+    "*.{html,css,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KsArt-IT/bulls-and-cows.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KsArt-IT/bulls-and-cows/issues"
+  },
+  "homepage": "https://github.com/KsArt-IT/bulls-and-cows#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "gh-pages": "^6.3.0",
+    "globals": "^17.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.1.0"
+  }
+}

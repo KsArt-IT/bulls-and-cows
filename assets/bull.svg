@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bull">
+  <!-- horns -->
+  <path d="M62 70 C40 66 22 52 16 28 C30 44 46 50 66 52 Z" fill="#efe4c8" stroke="#8a7a5a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M138 70 C160 66 178 52 184 28 C170 44 154 50 134 52 Z" fill="#efe4c8" stroke="#8a7a5a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- ears -->
+  <ellipse cx="44" cy="84" rx="22" ry="11" transform="rotate(-20 44 84)" fill="#5a3520" stroke="#2e1a0e" stroke-width="3"/>
+  <ellipse cx="156" cy="84" rx="22" ry="11" transform="rotate(20 156 84)" fill="#5a3520" stroke="#2e1a0e" stroke-width="3"/>
+  <ellipse cx="46" cy="84" rx="12" ry="5" transform="rotate(-20 46 84)" fill="#a8664a"/>
+  <ellipse cx="154" cy="84" rx="12" ry="5" transform="rotate(20 154 84)" fill="#a8664a"/>
+  <!-- head -->
+  <path d="M60 58 C72 46 128 46 140 58 C152 72 150 110 142 132 C136 148 64 148 58 132 C50 110 48 72 60 58 Z" fill="#7a4a2a" stroke="#2e1a0e" stroke-width="3" stroke-linejoin="round"/>
+  <!-- forehead tuft -->
+  <path d="M84 54 C88 62 94 64 100 58 C106 64 112 62 116 54 C110 58 104 56 100 50 C96 56 90 58 84 54 Z" fill="#4a2a16"/>
+  <!-- angry brows -->
+  <path d="M68 84 L92 92" stroke="#2e1a0e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M132 84 L108 92" stroke="#2e1a0e" stroke-width="5" stroke-linecap="round"/>
+  <!-- eyes -->
+  <circle cx="82" cy="100" r="9" fill="#fff" stroke="#2e1a0e" stroke-width="2"/>
+  <circle cx="118" cy="100" r="9" fill="#fff" stroke="#2e1a0e" stroke-width="2"/>
+  <circle cx="84" cy="102" r="4.5" fill="#1a0f08"/>
+  <circle cx="116" cy="102" r="4.5" fill="#1a0f08"/>
+  <!-- muzzle -->
+  <ellipse cx="100" cy="138" rx="40" ry="26" fill="#d9a88a" stroke="#2e1a0e" stroke-width="3"/>
+  <ellipse cx="86" cy="134" rx="6" ry="9" fill="#3a2214"/>
+  <ellipse cx="114" cy="134" rx="6" ry="9" fill="#3a2214"/>
+  <!-- nose ring -->
+  <circle cx="100" cy="154" r="11" fill="none" stroke="#d4a017" stroke-width="4"/>
+</svg>
