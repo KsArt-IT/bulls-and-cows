@@ -28,6 +28,7 @@
 
 /* Grass: mown-lawn stripes over the whole page */
 html {
+  scrollbar-gutter: stable;
   min-height: 100vh;
   background: repeating-linear-gradient(
     90deg,
@@ -242,7 +243,12 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding-left: 28px;
+  padding-left: 48px;
+  padding-right: 8px;
+  max-height: clamp(190px, 40vh, 420px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
 }
 
 .history__item {

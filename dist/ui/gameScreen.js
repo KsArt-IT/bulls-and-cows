@@ -30,10 +30,14 @@ const guessForm = (state, onGuess) => {
     });
     return form;
 };
-const historyList = (history) => element('ol', { className: 'history' }, history.map(({ guess, result }) => element('li', {
-    className: 'history__item',
-    text: `${guess.join('')} — ${result.bulls} bulls, ${result.cows} cows`,
-})));
+const historyList = (history) => {
+    const list = element('ol', { className: 'history' }, [...history].reverse().map(({ guess, result }) => element('li', {
+        className: 'history__item',
+        text: `${guess.join('')} — ${result.bulls} bulls, ${result.cows} cows`,
+    })));
+    list.reversed = true;
+    return list;
+};
 const newGameButton = (onNewGame) => {
     const button = element('button', { className: 'start', text: 'New game' });
     button.type = 'button';
