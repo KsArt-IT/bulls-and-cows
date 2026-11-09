@@ -43,17 +43,20 @@ const guessForm = (state: GameState, onGuess: (guess: string) => void): HTMLForm
   return form;
 };
 
-const historyList = (history: GameState['history']): HTMLElement =>
-  element(
+const historyList = (history: GameState['history']): HTMLElement => {
+  const list = element(
     'ol',
     { className: 'history' },
-    history.map(({ guess, result }) =>
+    [...history].reverse().map(({ guess, result }) =>
       element('li', {
         className: 'history__item',
         text: `${guess.join('')} — ${result.bulls} bulls, ${result.cows} cows`,
       }),
     ),
   );
+  list.reversed = true;
+  return list;
+};
 
 const newGameButton = (onNewGame: () => void): HTMLButtonElement => {
   const button = element('button', { className: 'start', text: 'New game' });
